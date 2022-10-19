@@ -9,7 +9,8 @@ userRouters.get("/add",(req,res)=>{
 })
 
 userRouters.post("",(req,res)=>{
-    res.send(req.body.name)
+
+    res.send(req.query.prefix+" "+req.body.name)
 })
 
 userRouters.route("/:id")
